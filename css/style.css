@@ -1,8 +1,11 @@
+/* common css  */
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
   background-color: rgba(250, 240, 230, 0.026);
 }
+
+/* search field  */
 .search-field {
   border: none;
   border-radius: 50px;
@@ -26,10 +29,11 @@ body {
   margin-left: -30px;
   border-radius: 25px;
 }
+
+/* all product shoe in card  */
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* border: 1px solid black; */
   text-align: center;
   width: 100%;
   margin: auto;
@@ -51,6 +55,8 @@ body {
   width: 150px;
   height: 150px;
 }
+
+/* cart total calculation table  */
 .cart {
   width: 350px;
   /* border: 1px solid green; */
@@ -63,11 +69,15 @@ body {
 .cart-main {
   padding-right: 30px;
 }
+
+/* media query for different screen  */
 @media only screen and (max-width: 768px) {
+/* all product shoe in card  */
   #all-products {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+  /* cart total calculation table  */
   .cart {
     width: 300px;
     /* border: 1px solid green; */
@@ -82,6 +92,7 @@ body {
   }
 }
 @media only screen and (max-width: 468px) {
+  /* all product shoe in card  */
   #all-products {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
